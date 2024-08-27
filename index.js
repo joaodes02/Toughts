@@ -8,6 +8,11 @@ const app = express();
 
 const conn = require("./db/conn");
 
+//Models
+const Tought = require("./models/Toughts");
+const User = require("./models/User");
+const { FORCE } = require("sequelize/lib/index-hints");
+
 //template engine
 app.engine("handlebars", exphbs.engine());
 app.set("view engine", "handlebars");
@@ -57,6 +62,7 @@ app.use((req, res, next) => {
 
 conn
   .sync()
+  // .sync({ force: true })
   .then(() => {
     app.listen(3000);
   })
