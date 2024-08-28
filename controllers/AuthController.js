@@ -30,6 +30,7 @@ module.exports = class AuthController {
 
       return;
     }
+
     //initialize session
     req.session.userid = user.id;
 
