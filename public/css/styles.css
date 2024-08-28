@@ -125,3 +125,23 @@ footer span{
     font-weight: bold;
     color: #f6982d;
 }
+.tought-form-container a{
+    color: #f6982d;
+}
+
+.tought-form-container a:hover{
+    color: #fff;
+}
+
+.tought-form-container h1{
+    margin: 1em 0em;
+    color: #fff;
+    border-left: 4px solid #f6982d;
+    padding: 0.3em;
+
+}
+
+.tought-form-container form{
+    max-width: 30%;
+    margin-top: 1.5em;
+}
